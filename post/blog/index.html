@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <title>hugo博客框架搭建步骤 // LittleBlack</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.55.6" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="LittleBlack" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://zhenghaotaba.github.io/css/main.min.f90f5edd436ec7b74ad05479a05705770306911f721193e7845948fb07fe1335.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="hugo博客框架搭建步骤"/>
+<meta name="twitter:description" content="可以参考hugo官网https://gohugo.io/
+一、安装 准备工作： (1)安装hugo 命令行操作：
+brew install hugo  也可以根据自己的操作系统进行解压安装（推荐） 下载地址(https://github.com/gohugoio/hugo/releases)
+验证安装
+hugo version  (2)安装Git 注意：之前没装过Git的装好之后要绑定账号密码
+二、部署 (1)创建站点 使用Git或者cmd命令定位到hugo的安装目录，执行
+hugo new site &#39;站点名称&#39;  (2)安装主题 在官网上选择自己喜欢的主题(https://themes.gohugo.io/)，每个主题的安装会有细微的区别，但都大同小异，安装完后会在hugo根目录/站点名称/themes中。 主题安装成功之后可以根据主题的介绍修改成自己想要的效果。
+(3)部署到本地 使用Git或者cmd定位到站点目录，执行
+hugo server  或者执行
+hugo server -t 主题名 --buildDrafts  三、编写博客 在站点目录执行
+hugo new post/名称.md  然后通过makedown工具定位到该文件进行编写
+或者直接在主题目录exampleSite\content\posts下新建md文件
+makedown工具推荐使用微软的visual studio在上面可以直接执行命令，当然也有其它很多编辑器。
+四、通过GitHub发布到外网 (1)登陆到自己的GitHub，新建一个仓库，仓库的名称格式为git用户名.github.io
+(2)在站点目录执行命令将代码转化为HTML格式
+hugo --theme=主题名 --baseUrl=&quot;https://仓库名称&quot; --bulidDrafts  执行之后会在站点目录生成一个public文件夹
+(3)进入public文件夹依次执行下面Git命令文件推到GitHub上
+git init  git add *  git commit -m &quot;版本说明&quot;  git remote add origin https://github."/>
+
+    <meta property="og:title" content="hugo博客框架搭建步骤" />
+<meta property="og:description" content="可以参考hugo官网https://gohugo.io/
+一、安装 准备工作： (1)安装hugo 命令行操作：
+brew install hugo  也可以根据自己的操作系统进行解压安装（推荐） 下载地址(https://github.com/gohugoio/hugo/releases)
+验证安装
+hugo version  (2)安装Git 注意：之前没装过Git的装好之后要绑定账号密码
+二、部署 (1)创建站点 使用Git或者cmd命令定位到hugo的安装目录，执行
+hugo new site &#39;站点名称&#39;  (2)安装主题 在官网上选择自己喜欢的主题(https://themes.gohugo.io/)，每个主题的安装会有细微的区别，但都大同小异，安装完后会在hugo根目录/站点名称/themes中。 主题安装成功之后可以根据主题的介绍修改成自己想要的效果。
+(3)部署到本地 使用Git或者cmd定位到站点目录，执行
+hugo server  或者执行
+hugo server -t 主题名 --buildDrafts  三、编写博客 在站点目录执行
+hugo new post/名称.md  然后通过makedown工具定位到该文件进行编写
+或者直接在主题目录exampleSite\content\posts下新建md文件
+makedown工具推荐使用微软的visual studio在上面可以直接执行命令，当然也有其它很多编辑器。
+四、通过GitHub发布到外网 (1)登陆到自己的GitHub，新建一个仓库，仓库的名称格式为git用户名.github.io
+(2)在站点目录执行命令将代码转化为HTML格式
+hugo --theme=主题名 --baseUrl=&quot;https://仓库名称&quot; --bulidDrafts  执行之后会在站点目录生成一个public文件夹
+(3)进入public文件夹依次执行下面Git命令文件推到GitHub上
+git init  git add *  git commit -m &quot;版本说明&quot;  git remote add origin https://github." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zhenghaotaba.github.io/post/blog/" />
+<meta property="article:published_time" content="2019-07-25T08:40:23&#43;08:00"/>
+<meta property="article:modified_time" content="2019-07-25T08:40:23&#43;08:00"/>
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://zhenghaotaba.github.io"><img class="app-header-avatar" src="/avatar.jpg" alt="LittleBlack" /></a>
+      <h1>LittleBlack</h1>
+      <p>看的越多，懂的越少</p>
+      <div class="app-header-social">
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">hugo博客框架搭建步骤</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Jul 25, 2019
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div></div>
+    </header>
+    <div class="post-content">
+      
+
+<p>可以参考hugo官网<a href="https://gohugo.io/">https://gohugo.io/</a></p>
+
+<h1 id="一-安装">一、安装</h1>
+
+<p>准备工作：
+(1)安装hugo
+命令行操作：</p>
+
+<pre><code>brew install hugo
+</code></pre>
+
+<p>也可以根据自己的操作系统进行解压安装（推荐）
+下载地址(<a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a>)<br />
+验证安装</p>
+
+<pre><code>hugo version
+</code></pre>
+
+<p>(2)安装Git
+注意：之前没装过Git的装好之后要绑定账号密码</p>
+
+<h1 id="二-部署">二、部署</h1>
+
+<p>(1)创建站点
+使用Git或者cmd命令定位到hugo的安装目录，执行</p>
+
+<pre><code>hugo new site '站点名称'
+</code></pre>
+
+<p>(2)安装主题
+在官网上选择自己喜欢的主题(<a href="https://themes.gohugo.io/)，每个主题的安装会有细微的区别，但都大同小异，安装完后会在hugo根目录/站点名称/themes中。">https://themes.gohugo.io/)，每个主题的安装会有细微的区别，但都大同小异，安装完后会在hugo根目录/站点名称/themes中。</a>
+主题安装成功之后可以根据主题的介绍修改成自己想要的效果。<br />
+(3)部署到本地
+使用Git或者cmd定位到站点目录，执行</p>
+
+<pre><code>hugo server
+</code></pre>
+
+<p>或者执行</p>
+
+<pre><code>hugo server -t 主题名 --buildDrafts
+</code></pre>
+
+<h1 id="三-编写博客">三、编写博客</h1>
+
+<p>在站点目录执行</p>
+
+<pre><code>hugo new post/名称.md
+</code></pre>
+
+<p>然后通过makedown工具定位到该文件进行编写<br />
+或者直接在主题目录exampleSite\content\posts下新建md文件</p>
+
+<p>makedown工具推荐使用微软的visual studio在上面可以直接执行命令，当然也有其它很多编辑器。</p>
+
+<h1 id="四-通过github发布到外网">四、通过GitHub发布到外网</h1>
+
+<p>(1)登陆到自己的GitHub，新建一个仓库，仓库的名称格式为git用户名.github.io<br />
+(2)在站点目录执行命令将代码转化为HTML格式</p>
+
+<pre><code>hugo --theme=主题名 --baseUrl=&quot;https://仓库名称&quot; --bulidDrafts
+</code></pre>
+
+<p>执行之后会在站点目录生成一个public文件夹<br />
+(3)进入public文件夹依次执行下面Git命令文件推到GitHub上</p>
+
+<pre><code>git init
+</code></pre>
+
+<pre><code>git add *
+</code></pre>
+
+<pre><code>git commit -m &quot;版本说明&quot;
+</code></pre>
+
+<pre><code>git remote add origin https://github.com/Git账号/仓库名称.git
+
+</code></pre>
+
+<pre><code>git push -u origin master
+</code></pre>
+
+<p>当然这些都是Git的常用命令</p>
+
+<p>至此从安装部署发布已经完成，可通过仓库名称访问到该博客。</p>
+
+<p>第一次编写博客可能步骤写的不是很详细，请多关照，以后会经常更新更多干货。</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

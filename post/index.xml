@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on LittleBlack</title>
+    <link>https://zhenghaotaba.github.io/post/</link>
+    <description>Recent content in Posts on LittleBlack</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 25 Jul 2019 08:40:23 +0800</lastBuildDate>
+    
+	<atom:link href="https://zhenghaotaba.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>hugo博客框架搭建步骤</title>
+      <link>https://zhenghaotaba.github.io/post/blog/</link>
+      <pubDate>Thu, 25 Jul 2019 08:40:23 +0800</pubDate>
+      
+      <guid>https://zhenghaotaba.github.io/post/blog/</guid>
+      <description>可以参考hugo官网https://gohugo.io/
+一、安装 准备工作： (1)安装hugo 命令行操作：
+brew install hugo  也可以根据自己的操作系统进行解压安装（推荐） 下载地址(https://github.com/gohugoio/hugo/releases)
+验证安装
+hugo version  (2)安装Git 注意：之前没装过Git的装好之后要绑定账号密码
+二、部署 (1)创建站点 使用Git或者cmd命令定位到hugo的安装目录，执行
+hugo new site &#39;站点名称&#39;  (2)安装主题 在官网上选择自己喜欢的主题(https://themes.gohugo.io/)，每个主题的安装会有细微的区别，但都大同小异，安装完后会在hugo根目录/站点名称/themes中。 主题安装成功之后可以根据主题的介绍修改成自己想要的效果。
+(3)部署到本地 使用Git或者cmd定位到站点目录，执行
+hugo server  或者执行
+hugo server -t 主题名 --buildDrafts  三、编写博客 在站点目录执行
+hugo new post/名称.md  然后通过makedown工具定位到该文件进行编写
+或者直接在主题目录exampleSite\content\posts下新建md文件
+makedown工具推荐使用微软的visual studio在上面可以直接执行命令，当然也有其它很多编辑器。
+四、通过GitHub发布到外网 (1)登陆到自己的GitHub，新建一个仓库，仓库的名称格式为git用户名.github.io
+(2)在站点目录执行命令将代码转化为HTML格式
+hugo --theme=主题名 --baseUrl=&amp;quot;https://仓库名称&amp;quot; --bulidDrafts  执行之后会在站点目录生成一个public文件夹
+(3)进入public文件夹依次执行下面Git命令文件推到GitHub上
+git init  git add *  git commit -m &amp;quot;版本说明&amp;quot;  git remote add origin https://github.</description>
+    </item>
+    
+  </channel>
+</rss>
