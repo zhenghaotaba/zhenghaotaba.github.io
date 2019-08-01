@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LittleBlack</title>
-    <link>https://zhenghaotaba.github.io/</link>
+    <link>zhenghaotaba.github.io/</link>
     <description>Recent content on LittleBlack</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Mon, 29 Jul 2019 09:07:53 +0800</lastBuildDate>
     
-	<atom:link href="https://zhenghaotaba.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="zhenghaotaba.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>数据库设置远程连接</title>
-      <link>https://zhenghaotaba.github.io/post/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5/</link>
+      <link>zhenghaotaba.github.io/post/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5/</link>
       <pubDate>Mon, 29 Jul 2019 09:07:53 +0800</pubDate>
       
-      <guid>https://zhenghaotaba.github.io/post/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5/</guid>
+      <guid>zhenghaotaba.github.io/post/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5/</guid>
       <description> 在学习或者工作中我们会遇到需要别人访问自己数据库的情况，大致有两种方法：
 一、将库做备份，在需要访问的电脑上恢复库
 二、直接远程连接到自己的库
@@ -30,10 +30,10 @@ use mysql;  select &#39;host&#39; from user where user=&#39;root&#39;  update us
     
     <item>
       <title>hugo博客框架搭建步骤</title>
-      <link>https://zhenghaotaba.github.io/post/hugo%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</link>
+      <link>zhenghaotaba.github.io/post/hugo%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</link>
       <pubDate>Thu, 25 Jul 2019 08:40:23 +0800</pubDate>
       
-      <guid>https://zhenghaotaba.github.io/post/hugo%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</guid>
+      <guid>zhenghaotaba.github.io/post/hugo%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</guid>
       <description>可以参考hugo官网https://gohugo.io/
 一、安装 准备工作： (1)安装hugo 命令行操作：
 brew install hugo  也可以根据自己的操作系统进行解压安装（推荐） 下载地址(https://github.com/gohugoio/hugo/releases)
@@ -50,7 +50,7 @@ hugo new post/名称.md  然后通过makedown工具定位到该文件进行编�
 (2)在站点目录执行命令将代码转化为HTML格式
 hugo --theme=主题名 --baseUrl=&amp;quot;https://仓库名称&amp;quot; --bulidDrafts  执行之后会在站点目录生成一个public文件夹
 (3)进入public文件夹依次执行下面Git命令文件推到GitHub上
-git init  git add *  git commit -m &amp;quot;版本说明&amp;quot;  git remote add origin https://github.</description>
+git init  git add *  git commit -m &amp;quot;版本说明&amp;quot;  版本库关联到远程库</description>
     </item>
     
   </channel>
