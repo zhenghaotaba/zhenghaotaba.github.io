@@ -6,17 +6,34 @@
     <description>Recent content in Posts on LittleBlack</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 25 Jul 2019 08:40:23 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jul 2019 09:07:53 +0800</lastBuildDate>
     
 	<atom:link href="https://zhenghaotaba.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>数据库设置远程连接</title>
+      <link>https://zhenghaotaba.github.io/post/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5/</link>
+      <pubDate>Mon, 29 Jul 2019 09:07:53 +0800</pubDate>
+      
+      <guid>https://zhenghaotaba.github.io/post/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5/</guid>
+      <description> 在学习或者工作中我们会遇到需要别人访问自己数据库的情况，大致有两种方法：
+一、将库做备份，在需要访问的电脑上恢复库
+二、直接远程连接到自己的库
+如果在需要数据同步的情景下，方法一就不适用了。
+以常见的关系型数据库为例
+Oracle 将被连接的数据库TNSLSNR服务添加到防火墙允许程序中即可。
+Mysql 登入mysql后，更改&amp;rdquo;mysql&amp;rdquo; 数据库里的 &amp;ldquo;user&amp;rdquo; 表里的 &amp;ldquo;host&amp;rdquo;项，从&amp;rdquo;localhost&amp;rdquo;改称&amp;rdquo;%&amp;ldquo;。
+示例代码：
+use mysql;  select &#39;host&#39; from user where user=&#39;root&#39;  update user set host=&#39;%&#39; where user=&#39;root&#39;  flush privileges;  select &#39;host&#39; from user where user=&#39;root&#39;;  </description>
+    </item>
+    
+    <item>
       <title>hugo博客框架搭建步骤</title>
-      <link>https://zhenghaotaba.github.io/post/blog/</link>
+      <link>https://zhenghaotaba.github.io/post/hugo%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</link>
       <pubDate>Thu, 25 Jul 2019 08:40:23 +0800</pubDate>
       
-      <guid>https://zhenghaotaba.github.io/post/blog/</guid>
+      <guid>https://zhenghaotaba.github.io/post/hugo%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</guid>
       <description>可以参考hugo官网https://gohugo.io/
 一、安装 准备工作： (1)安装hugo 命令行操作：
 brew install hugo  也可以根据自己的操作系统进行解压安装（推荐） 下载地址(https://github.com/gohugoio/hugo/releases)
@@ -28,8 +45,7 @@ hugo new site &#39;站点名称&#39;  (2)安装主题 在官网上选择自己�
 hugo server  或者执行
 hugo server -t 主题名 --buildDrafts  三、编写博客 在站点目录执行
 hugo new post/名称.md  然后通过makedown工具定位到该文件进行编写
-或者直接在主题目录exampleSite\content\posts下新建md文件
-makedown工具推荐使用微软的visual studio在上面可以直接执行命令，当然也有其它很多编辑器。
+或者直接在站点目录content\posts下新建md文件 makedown工具推荐使用微软的visual studio在上面可以直接执行命令，当然也有其它很多编辑器。
 四、通过GitHub发布到外网 (1)登陆到自己的GitHub，新建一个仓库，仓库的名称格式为git用户名.github.io
 (2)在站点目录执行命令将代码转化为HTML格式
 hugo --theme=主题名 --baseUrl=&amp;quot;https://仓库名称&amp;quot; --bulidDrafts  执行之后会在站点目录生成一个public文件夹
